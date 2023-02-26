@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "61bc7bcc-d1c7-4ebb-8a5c-77fdc6a347d5",
+		"name": "EmpleadoDepartamentoUsuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25935391"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mario1112\",\r\n    \"password\": \"1234\",\r\n    \"role\": \"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6969/api/usuarios/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"usuarios",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mario111\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6969/api/usuarios/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"usuarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Me",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNjc3NDQ2MDE0LCJ1c2VybmFtZSI6Ik1hcmlvMTExMiJ9.xTOC8ZJYNsBl4OAUsfJhtGuz5owvc0xj2KHSr37kK-UViU-sGfeEqEKvluqu1UO93OdwMEcwBtW36RMVem7ELw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/usuarios/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"usuarios",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNjc3NDQ2MDE0LCJ1c2VybmFtZSI6Ik1hcmlvMTExMiJ9.xTOC8ZJYNsBl4OAUsfJhtGuz5owvc0xj2KHSr37kK-UViU-sGfeEqEKvluqu1UO93OdwMEcwBtW36RMVem7ELw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/usuarios/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"usuarios",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
