@@ -1,4 +1,4 @@
-package resa.mario.empleadodepartamentospring2.config.db
+package resa.mario.empleadodepartamentospring2.db
 
 import resa.mario.empleadodepartamentospring2.dto.UsuarioDTORegister
 import resa.mario.empleadodepartamentospring2.models.Usuario
